@@ -6,7 +6,6 @@ const app = express();
 const server = http.createServer(app);
 const port = process.env.PORT || '8000';
 const bodyParser = require('body-parser');
-const io = require('socket.io')(server);
 const router = require('./routes/api');
 
 
@@ -16,6 +15,7 @@ app.use(bodyParser.json())
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, './public')));
+
 app.use(function (req, res, next) {
     res.removeHeader("X-Powered-By");
     next();
