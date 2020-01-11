@@ -1,0 +1,36 @@
+{
+  "test": {
+    "username": "root",
+    "password": "",
+    "database": "db_traktor",
+    "host": "localhost",
+    "port" : "3306",
+    "dialect": "mariadb",
+    "dialectOptions": {
+      "useUTC": false
+    },
+    "timezone": "+07:00"
+  },
+  "development": {
+    "username": "root",
+    "database": "db_traktor",
+    "host": "localhost",
+    "port" : "3306",
+    "dialect": "mariadb",
+    "dialectOptions": {
+      "useUTC": false
+    },
+    "timezone": "+07:00"
+  },
+  "production": {
+    "username": "root",
+    "database": "db_traktor",
+    "host": "localhost",
+    "port" : "3306",
+    "dialect": "mariadb",
+    "dialectOptions": {
+      "useUTC": false
+    },
+    "timezone": "+07:00"
+  }
+}
